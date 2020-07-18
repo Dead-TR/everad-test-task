@@ -1,0 +1,17 @@
+.order {
+  background: url(../../images/header/order.png) no-repeat top;
+  background-size: cover;
+  position: relative;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    width: 115px;
+    position: absolute;
+    left: 80px;
+    top: 25px;
+
+    @include fonts-style ("Roboto", normal, 16px, normal, 18px, black);
+  }
+}

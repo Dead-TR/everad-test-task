@@ -1,0 +1,37 @@
+.roof {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 20px 0 auto;
+
+  &__logo {
+    display: flex;
+    max-width: 200px;
+    margin: 0 50px 0 240px;
+    @include fonts-style ("Roboto", 700, 22px, normal, 40px, black);
+    text-align: center;
+    align-items: center;
+  }
+
+  &__logo-green {
+    margin: auto 15px 0 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  &__sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__section-item {
+    display: flex;
+    @include fonts-style ("Roboto", normal, 16px, italic, 18px, #666);
+  }
+
+  &__reward-logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+}

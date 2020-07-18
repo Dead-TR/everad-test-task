@@ -1,0 +1,44 @@
+.about {
+
+  &__title {
+    @include fonts-style ("Myriad", bold, 44px, normal, 44px, black);
+    width: 350px;
+  }
+
+  &__title .information__highlight {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  &__content {
+    margin: 45px 0 0;
+  }
+
+  &__text {
+    margin: 40px 0 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-circle {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    @include fonts-style ("Roboto", bold, 20px, normal, 44px, white);
+    margin: 0 20px 0 0;
+
+    background: #a8ca3f;
+    border: 5px solid #e8edc9;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__text-item {
+    @include fonts-style ("Roboto", normal, 20px, normal, 24px, black);
+
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  background: #e2e2e2;
+  max-width: 2560px;
+  min-height: 840px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+}

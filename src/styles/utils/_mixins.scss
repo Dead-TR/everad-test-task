@@ -1,7 +1,10 @@
-@mixin fonts-style($f-family, $f-weight, $f-size, $f-style, $color) {
-  font-family: $f-family, "Roboto", Arial, sans-serif;
+@mixin fonts-style($f-family, $f-weight, $f-size, $f-style, $l-height, $color) {
+  font-family: $f-family, Arial, sans-serif;
   font-weight: $f-weight;
   font-size: $f-size;
   color: $color;
   font-style: $f-style;
+  line-height: $l-height;
 }
+
+//@include fonts-style ("Roboto", 700, 34px, normal, 24px, white);
