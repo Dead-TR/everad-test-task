@@ -1,0 +1,70 @@
+.form-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+
+  & input,
+  & button {
+    outline: none;
+    border-radius: 50px;
+    height: 65px;
+    width: 220px;
+    margin-top: 8px;
+  }
+
+  & input {
+    border: none;
+    background: #eef2f7;
+    box-shadow: 0 4px 15px -15px #000 inset;
+    padding-left: 50px;
+    box-sizing: border-box;
+
+    & ::placeholder {
+      @include fonts-style ("Roboto", normal, 16px, normal, 18px, black);
+    }
+  }
+
+  & button {
+    @include fonts-style ("Roboto", bold, 28px, normal, 22px, black);
+    box-sizing: border-box;
+    border: 2px #ffd44e solid;
+    background: #ffc002;
+    box-shadow: 0 0 0 2px #ffc002;
+
+    & p {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  &__name {
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 15px;
+      height: 26px;
+      width: 22px;
+      background: url(../../images/header/form-name.svg)no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  &__phone {
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 20px;
+      height: 26px;
+      width: 22px;
+      background: url(../../images/header/phone.svg)no-repeat;
+      background-size: cover;
+    }
+  }
+}

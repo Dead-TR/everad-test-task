@@ -14,4 +14,91 @@
 
     @include fonts-style ("Roboto", normal, 16px, normal, 18px, black);
   }
+
+  &__body {
+    position: absolute;
+    width: 235px;
+    left: 20px;
+    top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__tittle {
+    @include fonts-style ("Roboto", 600, 20px, normal, 22px, black);
+    text-align: center;
+    width: 220px;
+  }
+
+  &__highlight {
+
+    &_red {
+      color: #ff6b00;
+    }
+
+    &_green {
+      color: #9dbd39;
+    }
+  }
+
+  &__prices {
+    @include fonts-style ("Roboto", normal, 14px, normal, 24px, #666);
+  }
+
+  &__price-item {
+    display: flex;
+    margin-top: 5px;
+
+    & strong {
+      margin-left: 17px;
+      color: black;
+    }
+  }
+
+  &__price-sum {
+    position: relative;
+    @include fonts-style ("Roboto", normal, 34px, normal, 24px, black);
+    margin: 15px 0;
+
+    & strong {
+      background: #ffbf02;
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      opacity: 0.1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(../../images/header/rectangle.svg) no-repeat;
+    }
+  }
+
+  &__notice {
+    margin-top: 5px;
+    @include fonts-style ("Roboto", normal, 14px, normal, 16px, black);
+    background: #eef2f7;
+    width: 99%;
+    height: 31px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      margin-right: 10px;
+    }
+  }
 }
