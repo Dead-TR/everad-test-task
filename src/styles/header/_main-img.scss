@@ -14,7 +14,16 @@
     border-radius: 50%;
     z-index: 1;
     top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__circle-BG {
     background: url(../../images/header/imgHead.png) no-repeat center;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
   }
 
   &__content {

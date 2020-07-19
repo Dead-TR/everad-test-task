@@ -1,0 +1,119 @@
+.warning-card {
+
+  &__title {
+    position: relative;
+    display: flex;
+  }
+
+  &__circle-up,
+  &__circle-left {
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  &__circle-up {
+    position: relative;
+    border-top: 10px solid;
+    border-left: 10px transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    &_easy {
+      border-top-color: $easy-color;
+    }
+
+    &_medium {
+      border-top-color: $medium-color;
+    }
+
+    &_max {
+      border-top-color: $max-color;
+    }
+  }
+
+  &__circle-left {
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 10px solid;
+    transform: rotate(45deg);
+
+    &_easy {
+      border-left-color: $easy-color;
+    }
+
+    &_medium {
+      border-left-color: $medium-color;
+    }
+
+    &_max {
+      border-left-color: $max-color;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    @include fonts-style ("Roboto", normal, 30px, normal, 28px, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    &_easy {
+      background: $easy-color;
+    }
+
+    &_medium {
+      background: $medium-color;
+    }
+
+    &_max {
+      background: $max-color;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    margin-left: 15px;
+  }
+
+  &__text {
+    @include fonts-style ("Roboto", bold, 22px, normal, 26px, black);
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__description {
+    @include fonts-style ("Roboto", normal, 18px, normal, 28px, black);
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      background: #becbd8;
+      width: 50px;
+      height: 3px;
+    }
+  }
+}
