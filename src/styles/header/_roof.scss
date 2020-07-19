@@ -35,3 +35,21 @@
   }
 
 }
+
+@media only screen and (max-width: 1200px) {
+
+  .roof {
+    &__logo {
+      margin: 0 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 725px) {
+
+  .roof {
+    &__sections {
+      display: none;
+    }
+  }
+}

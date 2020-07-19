@@ -2,7 +2,7 @@
 
   &__title {
     @include fonts-style ("Myriad", bold, 44px, normal, 44px, black);
-    width: 350px;
+    max-width: 350px;
   }
 
   &__title .information__highlight {
@@ -26,15 +26,21 @@
     box-sizing: border-box;
     @include fonts-style ("Roboto", bold, 20px, normal, 44px, white);
     margin: 0 20px 0 0;
+    cursor: default;
 
     background: #a8ca3f;
     border: 5px solid #e8edc9;
     border-radius: 50%;
+    transition: transform 1s;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__text-item {
@@ -42,3 +48,9 @@
 
   }
 }
+
+// @media only screen and (max-width: 460px) {
+//   .about {
+
+//   }
+// }

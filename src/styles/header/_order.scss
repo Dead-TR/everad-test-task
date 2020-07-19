@@ -44,7 +44,19 @@
   }
 
   &__prices {
+    position: relative;
     @include fonts-style ("Roboto", normal, 14px, normal, 24px, #666);
+    
+    &::after {
+      content: "";
+      position: absolute;
+      right: -60px;
+      top: 50px;
+      width: 55px;
+      height: 220px;
+      background: url(../../images/header/array.svg) no-repeat top; 
+      background-size: contain;
+    }
   }
 
   &__price-item {

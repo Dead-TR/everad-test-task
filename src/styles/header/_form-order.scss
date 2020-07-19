@@ -9,7 +9,7 @@
     outline: none;
     border-radius: 50px;
     height: 65px;
-    width: 220px;
+    width: 200px;
     margin-top: 8px;
   }
 
@@ -31,6 +31,15 @@
     border: 2px #ffd44e solid;
     background: #ffc002;
     box-shadow: 0 0 0 2px #ffc002;
+    transition: transform 1s, background 1s, border;
+
+    &:hover {
+      transform: scale(1.1);
+      border: 2px #ffc002 solid;
+      background: #ffa602;
+
+      cursor: pointer;
+    }
 
     & p {
       font-size: 16px;
