@@ -178,7 +178,8 @@ a {
   margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  z-index: 3; }
   .information__left {
     max-width: 400px;
     -webkit-transition: left 1s;
@@ -625,7 +626,17 @@ a {
             justify-content: space-between; }
   .main__card {
     width: 350px;
-    margin: 0 20px; }
+    margin: 20px;
+    border-radius: 15px;
+    -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 1s;
+    transition: -webkit-transform 1s, -webkit-box-shadow 1s;
+    transition: transform 1s, box-shadow 1s;
+    transition: transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s; }
+    .main__card:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75);
+              box-shadow: 0 10px 10px 1px rgba(0, 0, 0, 0.75); }
 
 @media only screen and (max-width: 1300px) {
   .main__cards {
@@ -770,7 +781,7 @@ a {
   position: relative;
   max-width: 1200px;
   min-height: 140px;
-  margin: 70px auto;
+  margin: 100px auto 40px;
   padding: 10px 130px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
