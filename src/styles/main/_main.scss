@@ -29,7 +29,14 @@
 
   &__card {
     width: 350px;
-    margin: 0 20px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: transform 1s, box-shadow 1s;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 10px 1px rgba(0,0,0,0.75);
+    }
   }
 }
 

@@ -4,6 +4,7 @@
   right: -30px;
   margin-top: 60px;
   display: flex;
+  z-index: 3;
 
   &__left {
     max-width: 400px;
@@ -126,7 +127,8 @@
     &__right {
       margin-right: auto;
     }
-  }  
+
+  }
 }
 
 @media only screen and (max-width: 725px) {
